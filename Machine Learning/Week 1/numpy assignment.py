@@ -56,24 +56,24 @@ import numpy as np
 # arr2*= arr3
 # print(arr2)
 
-import time
-import numpy as np
-arr_nonvectorized = np.random.rand(1000, 1000)
-arr_vectorized = np.array(arr_nonvectorized)
+# import time
+# import numpy as np
+# arr_nonvectorized = np.random.rand(1000, 1000)
+# arr_vectorized = np.array(arr_nonvectorized)
 
-start_nv = time.time()
+# start_nv = time.time()
 
-for i in range(1000):
-    for j in range(1000):
-        arr_nonvectorized[i,j]*=3
-end_nv = time.time()
-print("Time taken in non-vectorized approach:", 1000*(end_nv-start_nv), "ms")
+# for i in range(1000):
+#     for j in range(1000):
+#         arr_nonvectorized[i,j]*=3
+# end_nv = time.time()
+# print("Time taken in non-vectorized approach:", 1000*(end_nv-start_nv), "ms")
 
-print(arr_nonvectorized)
+# print(arr_nonvectorized)
 
-start_v = time.time()
-arr_vectorized*= 3
-end_v = time.time()
-print("Time taken in vectorized approach:", 1000*(end_v-start_v), "ms")
+# start_v = time.time()
+# arr_vectorized*= 3
+# end_v = time.time()
+# print("Time taken in vectorized approach:", 1000*(end_v-start_v), "ms")
 
-print(arr_vectorized)
+# print(arr_vectorized)
